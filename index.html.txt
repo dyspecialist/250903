@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>아주 간단한 HTML 홈페이지</title>
+  </head>
+  <body>
+    <!-- 상단 헤더 -->
+    <header>
+      <h1>우리 홈페이지</h1>
+      <p>HTML만으로 구성된 초간단 샘플</p>
+    </header>
+
+    <!-- 네비게이션 (같은 페이지 내 앵커 링크) -->
+    <nav>
+      <a href="#about">소개</a> |
+      <a href="#features">특징</a> |
+      <a href="#gallery">갤러리</a> |
+      <a href="#contact">문의</a>
+    </nav>
+
+    <hr />
+
+    <!-- 본문 영역 -->
+    <main>
+      <!-- 소개 섹션 -->
+      <section id="about">
+        <h2>소개</h2>
+        <p>
+          이 페이지는 <strong>HTML 태그만</strong> 사용한 기본 구조 예시입니다.
+          스타일(CSS)이나 스크립트(JavaScript)는 전혀 포함하지 않았습니다.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- 특징 섹션 -->
+      <section id="features">
+        <h2>특징</h2>
+        <ul>
+          <li>반응형 메타 태그 포함(줌/가독성 개선)</li>
+          <li>시맨틱 태그 활용: <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>footer</code></li>
+          <li>내부 앵커 링크로 손쉬운 이동</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- 갤러리 섹션 (이미지 자리만) -->
+      <section id="gallery">
+        <h2>갤러리</h2>
+        <p>이미지가 없다면, 아래처럼 단순한 목록이나 캡션을 넣을 수 있습니다.</p>
+        <figure>
+          <img src="" alt="샘플 이미지 (비워둠)" />
+          <figcaption>샘플 이미지 캡션</figcaption>
+        </figure>
+        <p>
+          실제 이미지를 넣으려면 <code>&lt;img src="이미지경로" alt="설명" /&gt;</code> 형태로 수정하세요.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- 문의 섹션 -->
+      <section id="contact">
+        <h2>문의하기</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="name">이름</label><br />
+            <input id="name" name="name" type="text" required />
+          </p>
+          <p>
+            <label for="email">이메일</label><br />
+            <input id="email" name="email" type="email" required />
+          </p>
+          <p>
+            <label for="message">메시지</label><br />
+            <textarea id="message" name="message" rows="5"></textarea>
+          </p>
+          <p>
+            <button type="submit">보내기</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- 하단 푸터 -->
+    <footer>
+      <p>&copy; <time datetime="2025">2025</time> 아주 간단한 HTML 홈페이지</p>
+      <p><a href="#top" title="맨 위로">맨 위로</a></p>
+    </footer>
+  </body>
+</html>
